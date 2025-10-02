@@ -28,7 +28,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground text-balance"
           >
-            A passionate developer & designer crafting digital experiences
+            Odoo Developer
           </motion.p>
 
           <motion.p
@@ -37,9 +37,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl text-pretty"
           >
-            I build accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My
-            favorite work lies at the intersection of design and development, creating experiences that not only look
-            great but are meticulously built for performance and usability.
+            Saya adalah pengembang Odoo berpengalaman dalam kustomisasi modul, integrasi sistem, dan otomatisasi proses bisnis. Selain keahlian teknis, saya memiliki soft skill seperti komunikasi efektif, kerja tim, dan pemecahan masalah untuk memastikan proyek berjalan lancar dan berdampak.
           </motion.p>
 
           <motion.div

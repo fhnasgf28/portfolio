@@ -8,10 +8,10 @@ export interface Story {
 export const storyData: Story[] = [
   {
     id: "1",
-    image: "/coding-setup.png",
+    image: "/farhan1.jpg",
     title: "The Beginning",
     description:
-      "My journey into tech started with a simple curiosity about how websites work. I spent countless nights learning HTML, CSS, and JavaScript, building small projects that gradually grew in complexity. This self-taught foundation taught me the importance of persistence and continuous learning.",
+      "Selama masa kuliah saya tinggal di masjid dan aktif menjadi pengurus. Pengalaman ini mengajarkan disiplin, tanggung jawab, serta kepemimpinan — dari mengelola kegiatan rutin hingga merawat fasilitas dan melayani jamaah. Kebiasaan tersebut membentuk karakter saya yang peduli pada jamaah dan terampil bekerja sama dalam tim.",
   },
   {
     id: "2",
