@@ -1,80 +1,108 @@
-# Personal Website
+# Modern Portfolio Website
 
-Welcome to my [personal website](https://mldangelo.com)! This is an [MIT licensed](https://github.com/mldangelo/personal-site/blob/main/LICENSE) React-based Jamstack application. It offers a simple interface, easy modifications, static export capabilities, and free automatic deployments via [GitHub Pages](https://pages.github.com/).
+A beautiful, modern portfolio website built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.
 
-## 🚀 Features
+## Features
 
-- Built with modern JavaScript, using tools and frameworks like [create-react-app](https://github.com/facebook/create-react-app), [React-Router](https://reactrouter.com/), and SCSS.
-- Automated workflows via [GitHub Actions](https://github.com/features/actions).
-- And more!
+- 🎨 Modern, clean design with dark theme
+- ✨ Smooth scroll-based animations using Framer Motion
+- 📱 Fully responsive design
+- ♿ Accessible components
+- 🎯 SEO optimized
+- 🚀 Built with Next.js App Router
+- 💎 TypeScript for type safety
+- 🎭 Reusable StoryCard component
 
-## 🛠 Adapting this Project
+## Getting Started
 
-Want to create your own personal website based on this project? You can set it up in as little as 30 minutes! Follow the setup instructions below and check out the **[detailed guide and checklist](./docs/adapting-guide.md)** on adapting this project to your needs. If you encounter any challenges, don't hesitate to contact me through an issue or email at [help@mldangelo.com](mailto:help@mldangelo.com).
+### Prerequisites
 
-## 🤝 Contributing
+- Node.js 18+ installed
+- npm or yarn package manager
 
-Your contributions are warmly welcomed! If you wish to contribute, please review the [design goals](./docs/design-goals.md), [roadmap](./docs/roadmap.md), and [contributing guidelines](./docs/contributing.md). For any bugs or suggestions, you can reach out via email, submit a pull request (I'd be happy to get you a coffee as a thank-you!), or open an issue.
+### Installation
 
-## 🔧 Dependencies
+1. Clone or download this project
 
-Ensure you have [node](https://nodejs.org/) >= v16. Optionally, use [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) to manage node versions.
+2. Install dependencies:
+\`\`\`bash
+npm install
+\`\`\`
 
-## 🚀 Setup and Running
+3. Run the development server:
+\`\`\`bash
+npm run dev
+\`\`\`
 
-1. Clone the repository:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-   ```bash
-   git clone git://github.com/mldangelo/personal-site.git
-   cd personal-site
-   ```
+## Customization
 
-2. (Optional) Ensure you're on Node v16 or higher:
+### Update Personal Information
 
-   ```bash
-   nvm install
-   node --version
-   ```
+Edit the following files to customize with your information:
 
-3. Install dependencies:
+- `components/hero-section.tsx` - Update name, tagline, and bio
+- `lib/story-data.ts` - Add your own story cards with images, titles, and descriptions
+- `components/contact-section.tsx` - Update contact information
+- `app/layout.tsx` - Update metadata (title, description, keywords)
 
-   ```bash
-   npm install
-   ```
+### Add More Story Cards
 
-4. Start the application:
+Edit `lib/story-data.ts` and add new objects to the `storyData` array:
 
-   ```bash
-   npm start
-   ```
+\`\`\`typescript
+{
+  id: '5',
+  image: '/your-image.jpg',
+  title: 'Your Story Title',
+  description: 'Your story description...',
+}
+\`\`\`
 
-By default, the application should be available at [http://localhost:3000/](http://localhost:3000/).
+### Customize Colors
 
-## 🚢 Deploying
+Edit `app/globals.css` to change the color scheme. The current theme uses:
+- Deep navy blue background
+- Teal accent color
+- Soft white text
 
-### Deploying to GitHub Pages
+## Project Structure
 
-1. Update the environment variables and Git remote URL in [`.github/workflows/github-pages.yml`](.github/workflows/github-pages.yml).
-2. Adjust the `homepage` value in `package.json` based on your hosting preferences.
-3. Planning on using a custom domain? Update `public/CNAME`. Otherwise, remove it.
+\`\`\`
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main page
+│   └── globals.css         # Global styles and theme
+├── components/
+│   ├── hero-section.tsx    # Landing section
+│   ├── story-timeline.tsx  # Story section wrapper
+│   ├── story-card.tsx      # Reusable story card with animations
+│   ├── contact-section.tsx # Contact form and info
+│   └── navigation.tsx      # Fixed navigation bar
+└── lib/
+    └── story-data.ts       # Story data source
+\`\`\`
 
-After making a commit to `main`, simply push your changes, and the deployment will be handled automatically.
+## Technologies Used
 
-### Static Export
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS v4** - Utility-first styling
+- **Framer Motion** - Smooth animations
+- **Lucide React** - Beautiful icons
+- **Geist Font** - Modern typography
 
-For a static export without deploying to GitHub Pages:
+## Deployment
 
-- Remove or disable `.github/workflows/github-pages.yml`.
-- Execute:
+Deploy easily to Vercel:
 
-  ```bash
-  npm run predeploy
-  ```
+\`\`\`bash
+npm run build
+\`\`\`
 
-This will generate a static version in `personal-site/build/` which you can host or deploy to a CDN.
+Then push to GitHub and connect to Vercel for automatic deployments.
 
-## 🙌 Acknowledgements
+## License
 
-- Initial template from [Future Imperfect](https://html5up.net/future-imperfect) by [@ajlkn](https://github.com/ajlkn) for [HTML5 UP](html5up.net).
-- Special thanks to [@typpo](https://github.com/typpo) for tirelessly answering all of my node.js and react questions.
-- Kudos to [@notrueblood](https://github.com/notrueblood)[<sup>[1]</sup>](https://github.com/mldangelo/personal-site/pull/218) and [@sjhsieh](https://github.com/sjhsieh)[<sup>[2]</sup>](https://github.com/mldangelo/personal-site/issues/168) for their constructive feedback.
+MIT License - feel free to use this template for your own portfolio!
